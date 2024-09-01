@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Đặt Bàn</title>
+    <link rel="stylesheet" href="../styles.css">
+    <script src="../js/scriptsreser.js" defer></script>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul class="navbar">
+                <li><a href="../index.html">Trang Chủ</a></li>
+                <li class="dropdown">
+                    <a href="../menu.html">Thực Đơn <span class="arrow">▼</span></a>
+                    <ul class="dropdown-content">
+                        <li><a href="../menu/menubuffet.html">Menu Buffet</a></li>
+                        <li><a href="../menu/menugoimon.html">Menu Gọi món</a></li>
+                        <li><a href="../menu/menunuoc.html">Menu Đồ Uống</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown">        
+                    <a href="../reservation&report.html">Đặt Bàn & Phản hồi<span class="arrow">▼</span></a>
+                        <ul class="dropdown-content">
+                            <li><a href="../reservation&report/reservation.html">Đặt Bàn</a></li>
+                            <li><a href="../reservation&report/contact.html">Phản Hồi</a></li>
+                            <li><a href="../reservation&report/about.html">Giới Thiệu</a></li>
+                        </ul>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="contact-section">
+        <section class="contact-card">
+            <h1 style="color: brown;">Đặt Bàn</h1>
+            <form id="reservation-form">
+                <label for="name">Họ và Tên:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="phone">Số Điện Thoại:</label>
+                <input type="tel" id="phone" name="phone" required>
+
+                <label for="date">Ngày Đặt:</label>
+                <input type="date" id="date" name="date" required>
+
+                <label for="time">Giờ Đặt:</label>
+                <input type="time" id="time" name="time" required>
+
+                <label for="people">Số Người:</label>
+                <input type="number" id="people" name="people" min="1" max="20" required>
+
+                <label for="notes">Yêu Cầu Đặc Biệt:</label>
+                <textarea id="notes" name="notes"></textarea>
+
+                <button type="submit">Xác Nhận Đặt Bàn</button>
+            </form>
+            <div id="confirmation-message" style="display: none; padding: 10px; border: 1px solid #ddd; margin-top: 20px;"></div>
+        </section>
+    </section>
+    <footer>
+            <p style="font-size: 15px;">&copy; 2024 Nhà Hàng Nhật Bản Nise Ryōtei.</p>
+            <ul style="list-style-type: none;">
+                <li>Địa chỉ: Số 064 Đường Dương Quảng Hàm, Quận Gò Vấp, TP. HCM</li>
+                <li>Số điện thoại: (028) 1234 5678</li>
+                <li>Email: thienthao6465@gmail.com</li>
+            </ul>
+</footer>
+</body>
+</html>
